@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import MenuItem, { IMenuItem } from "../models/MenuItem";
 
-// Create a new menu item
 export const createMenuItem = async (req: Request, res: Response) => {
   try {
     const { name, price, menuId } = req.body;
@@ -18,7 +17,6 @@ export const createMenuItem = async (req: Request, res: Response) => {
   }
 };
 
-// Get all items for a specific menu
 export const getItemsByMenu = async (req: Request, res: Response) => {
   try {
     const { menuId } = req.params;

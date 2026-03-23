@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import Menu from "../models/Menu";
 import MenuItem from "../models/MenuItem";
 
-// Create menu
 export const createMenu = async (req: Request, res: Response) => {
   try {
     const { name, description, parentId } = req.body;
